@@ -57,9 +57,6 @@ if (BUILD_LIBS)
 			target_compile_options(CFHDCodecStatic PUBLIC ${COMPILER_FLAGS})
 		
 			set_target_properties(CFHDCodecStatic PROPERTIES POSITION_INDEPENDENT_CODE ON)
-			if (UNIX)
-				set_target_properties(CFHDCodecStatic PROPERTIES OUTPUT_NAME CFHDCodec)
-			endif (UNIX)
 		
 			target_link_libraries(CFHDCodecStatic)
 		endif (BUILD_SEPARATED)
